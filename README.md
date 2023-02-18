@@ -21,6 +21,10 @@
 - Repeat
 - Exit the program with `CTRL-C`
 
+### Increase/Decrease Possible Response Length
+- You may want to increase or decrease the max token length to avoid a high usage rate, or in order to increase the length of possible response size
+- Change `max_token_length` in `chat.py` to meet your needs
+
 ### To Do
 - Allow for continuous conversations
 - Allow for the user to speak (speech to text -> ✅ChatGPT query/Response -> ✅text to speech)
