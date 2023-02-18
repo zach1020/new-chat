@@ -4,7 +4,7 @@
 ### Install Dependencies
 - `pip install openai gtts python-vlc`
 - You need to have VLC installed on your system to run this program
-- You should probably be using Linux (tested on Ubuntu)
+- You probably need to use Linux (tested on Ubuntu)
 
 ### Getting the API Key
 - You need an OpenAI API key of your own for this program to work
