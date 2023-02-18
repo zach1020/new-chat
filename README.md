@@ -1,2 +1,28 @@
-# new-chat
-A Python script that allows you to use ChatGPT in your terminal AND hear its responses spoken.
+# New Chat
+## A script that allows you to have a conversation with ChatGPT in the terminal AND hear ChatGPT's responses spoken
+
+### Install Dependencies
+- `pip install openai gtts python-vlc`
+- You need to have VLC installed on your system to run this program
+- You should probably be using Linux (tested on Ubuntu)
+
+### Getting the API Key
+- You need an OpenAI API key of your own for this program to work
+- Start by going to https://openai.com/api/
+- After setting up an account and generating an API key, add the API key to the `secret_key` variable in `keys.py` in the new-chat folder 
+
+
+### How to Run
+- Open terminal
+- Navigate to the new-chat folder
+- `python main.py`
+- Enter your question in the prompt `> `
+- Wait for ChatGPT to respond
+- Repeat
+- Exit the program with `CTRL-C`
+
+### To Do
+- Allow for continuous conversations
+- Allow for the user to speak (speech to text -> ✅ChatGPT query/Response -> ✅text to speech)
+- Make it work on Mac and Windows
+- Make it easier to exit the program (not just `CTRL-C`)
