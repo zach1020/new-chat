@@ -2,7 +2,7 @@
 ## A script that allows you to have a conversation with ChatGPT in the terminal AND hear ChatGPT's responses spoken
 
 ### Install Dependencies
-- `pip install openai gtts python-vlc`
+- `pip install openai gtts python-vlc pyaudio SpeechRecognition`
 - You need to have VLC installed on your system to run this program
 - You probably need to use Linux (tested on Ubuntu)
 
