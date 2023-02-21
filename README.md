@@ -27,6 +27,5 @@
 
 ### To Do
 - Allow for continuous conversations
-- Allow for the user to speak (speech to text -> ✅ChatGPT query/response -> ✅text to speech)
 - Make it work on Mac and Windows
 - Make it easier to exit the program (not just `CTRL-C`)
