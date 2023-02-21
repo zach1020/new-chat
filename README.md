@@ -1,6 +1,4 @@
 # New Chat
-
-# New Chat
 ## A script that allows you to have a spoken conversation with OpenAI's Text AI
 
 ### Install Dependencies
