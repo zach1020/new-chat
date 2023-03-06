@@ -1,20 +1,15 @@
-from chat import chat
-from tts import speak
-from stt import stt
-
-# main.py
-''' Old main function
-def main():
-	prompt = ''
-	while prompt != 'quit':
-		prompt = input('> ')
-		speak(chat(prompt))
-'''
-
-def main():
-	while True:
-		prompt = stt()
-		speak(chat(prompt))
+import openai
+import chat
+import keys
 
 
-main()
+# Main
+
+openai.api_key = keys.secret_key
+
+master_conversation = []
+
+
+while True:
+    print("Press CTRL-C to Quit")
+    chat.converse(master_conversation)
