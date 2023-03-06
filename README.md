@@ -27,6 +27,5 @@
 - Change `max_token_length` in `chat.py` to meet your needs
 
 ### To Do
-- Allow for continuous conversations (when ChatGPT API is released)
 - Make it work on Windows
 - Make it easier to exit the program (not just `CTRL-C`)
