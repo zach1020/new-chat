@@ -1,22 +1,44 @@
-import os
 import openai
+import stt
+import tts
 
 import keys
 
-def chat(my_prompt):
-	#openai.organization = 
-	openai.api_key = keys.secret_key
+def chat(conversation):
+    """
+    Use ChatGPT
+    """
+    completion = openai.ChatCompletion.create(
+        model='gpt-3.5-turbo',
+        messages=conversation
+    )
+    #print(completion)
+    response = {"role": "system", "content": completion["choices"][0]["message"]["content"].strip()}
+    tts.speak(response["content"])
+    print(response["content"])
 
-	max_token_length = 500
+    return response
 
-	completion_object = openai.Completion.create(
-		model = "text-davinci-003",
-		prompt= my_prompt,
-		max_tokens = max_token_length,
-		temperature = 0
-	)
 
-	response = completion_object['choices'][0]['text'].strip()
+def prompt(): 
+    """
+    Get the prompt from user
+    """
+    prompt = {"role": "user", "content": stt.stt()}
+    return prompt
 
-	print(response)
-	return response
+def add_to_conversation(conversation, to_add):
+    """
+    Add something to the overall conversation
+    """
+    conversation.append(to_add)
+
+def converse(conversation):
+    """
+    1. Get prompt from user
+    2. Add prompt to conversation
+    3. Get ChatGPT response
+    4. Add response to conversation
+    """
+    add_to_conversation(conversation, prompt())
+    add_to_conversation(conversation, chat(conversation))
