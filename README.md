@@ -3,7 +3,7 @@
 
 ### Install Dependencies
 - Mac: `brew install portaudio flac`
-- Ubuntu: `sudo apt install python3-pyaudio`
+- Ubuntu: `sudo apt install python3-pyaudio gnustep-gui-runtime`
 - Both: `pip install pyaudio openai`
 - Works on Mac and Ubuntu Linux
 
