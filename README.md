@@ -1,5 +1,5 @@
 # New Chat
-## A script that allows you to have a spoken conversation with OpenAI's Text Completion AI
+## A script that allows you to have a spoken conversation with OpenAI's ChatGPT
 
 ### Install Dependencies
 - Mac: `brew install portaudio flac`
